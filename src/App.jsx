@@ -1,6 +1,8 @@
 // src/App.js
 import React from "react";
 import Navbar from "./components/Navbar";
+// import Navbar from "./components/Navbar.jsx";
+
 import HeroSection from "./components/HeroSection";
 import BookingForm from "./components/BookingForm";
 import Categories from "./components/Categories";
@@ -17,20 +19,17 @@ import "./styles/App.css"; // Import the CSS file
 function App() {
   return (
     <>
-    <div >
       <Navbar />
       <HeroSection />
-      </div>
       <div className="app-container">
-      <BookingForm />
-      <Categories />
-      <SpecialOffers />
+        <BookingForm />
+        <Categories />
+        <SpecialOffers />
       </div>
-      <div>
       <Footer />
-    </div>
     </>
   );
 }
+
 
 export default App;

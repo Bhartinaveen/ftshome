@@ -13,7 +13,7 @@ const Footer = () => {
         <div className="footer-content">
           {/* Company Logo */}
           <div className="footer-logo">
-            <img src="/logo.png" alt="Livo Hotels Logo" />
+            <img src="public/images/companylogo.jpg" alt="Livo Hotels Logo" />
           </div>
 
           {/* Hotel Booking App Description */}
