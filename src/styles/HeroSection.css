@@ -1,0 +1,56 @@
+.hero {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.hero-text {
+    position: relative;
+    z-index: 1;
+}
+
+/* Modern Rectangular Button */
+.hero-btn {
+    background: linear-gradient(90deg, #1e3c72, #2a5298); /* Deep blue gradient */
+    border: 2px solid transparent;
+    color: white;
+    padding: 14px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px; /* Slightly rounded edges */
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(30, 60, 114, 0.3);
+}
+
+/* Hover Effect */
+.hero-btn:hover {
+    background: linear-gradient(90deg, #2a5298, #1e3c72); /* Reverse gradient */
+    border-color: white; /* White border appears on hover */
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(30, 60, 114, 0.5);
+}
+
+/* Click Effect */
+.hero-btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 8px rgba(30, 60, 114, 0.4);
+}

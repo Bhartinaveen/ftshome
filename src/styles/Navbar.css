@@ -1,0 +1,26 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px; /* Adjust padding */
+  height: 50px; /* Reduce height */
+  background: linear-gradient(90deg, #A1E3F9, #D1F8EF); /* Gradient background */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #240303;
+  font-weight: bold;
+}
+
+.logo-img {
+  width: 100px; /* Adjust as needed */
+  height: auto;
+}

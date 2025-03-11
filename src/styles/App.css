@@ -1,0 +1,7 @@
+.app-container {
+    background: linear-gradient(to bottom, #fdfcf7, #d4e8a5);
+    min-height: 100vh;
+    width: 100%;
+    border-radius: 10px; /* Adjust as needed */
+    overflow: hidden; /* Ensures content doesn't overflow rounded corners */
+}

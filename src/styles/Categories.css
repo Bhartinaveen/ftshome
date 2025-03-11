@@ -1,0 +1,61 @@
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .category-card {
+    background: linear-gradient(135deg, #9ddcff, #d6f0ff); /* High-gradient Light Blue */
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.15); /* Soft shadow for depth */
+    width: 230px;
+    transition: transform 0.3s ease, background 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .category-card:hover {
+    background: linear-gradient(135deg, #74c7ff, #c1e9ff); /* More vibrant blue on hover */
+    transform: scale(1.07);
+  }
+  
+  .category-image {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .hotel-name {
+    font-size: 17px;
+    font-weight: bold;
+    color: #06457a; /* Rich dark blue */
+    margin-top: 5px;
+  }
+  
+  .category-name {
+    font-size: 18px;
+    font-weight: 600;
+    color: #075a9c; /* Muted deep blue */
+    margin-top: 8px;
+  }
+  
+  .rating {
+    margin: 5px 0;
+    font-size: 15px;
+    color: #ffcc00;
+  }
+  
+  .rating-text {
+    font-size: 14px;
+    color: #555;
+    margin-left: 5px;
+  }
+  
+  .price {
+    font-size: 17px;
+    font-weight: bold;
+    color: #0056b3;
+  }
+  
