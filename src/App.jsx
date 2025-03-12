@@ -1,13 +1,13 @@
 // src/App.js
 import React from "react";
-import Navbar from "./components/Navbar";
+import Navbar from "./Components/Navbar";
 // import Navbar from "./components/Navbar.jsx";
 
-import HeroSection from "./components/HeroSection";
-import BookingForm from "./components/BookingForm";
-import Categories from "./components/Categories";
-import SpecialOffers from "./components/SpecialOffers";
-import Footer from "./components/Footer";
+import HeroSection from "./Components/HeroSection";
+import BookingForm from "./Components/BookingForm";
+import Categories from "./Components/Categories";
+import SpecialOffers from "./Components/SpecialOffers";
+import Footer from "./Components/Footer";
 import "./styles/BookingForm.css"; 
 // import "./styles/Categories.css";
 // import "./styles/Footer.css";
