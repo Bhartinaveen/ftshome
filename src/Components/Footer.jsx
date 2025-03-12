@@ -6,14 +6,14 @@ const Footer = () => {
     <>
       {/* Full-width Top Image */}
       <div className="footer-top-image">
-        <img src="public/images/map.png" alt="Livo Hotels Banner" />
+        <img src="/images/map.png" alt="Livo Hotels Banner" />
       </div>
 
       <footer className="footer">
         <div className="footer-content">
           {/* Company Logo */}
           <div className="footer-logo">
-            <img src="public/images/companylogo.jpg" alt="Livo Hotels Logo" />
+            <img src="/images/companylogo.jpg" alt="Livo Hotels Logo" />
           </div>
 
           {/* Hotel Booking App Description */}
