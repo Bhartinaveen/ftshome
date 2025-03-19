@@ -14,6 +14,12 @@ const Navbar = () => {
         <li><a href="#">Rooms</a></li>
         <li><a href="#">Services</a></li>
         <li><a href="#">Pricing</a></li>
+
+        {/* Login and Sign-Up Buttons */}
+        <li className="auth-buttons">
+          <button className="login-btn">Login</button>
+          <button className="signup-btn">Sign Up</button>
+        </li>
       </ul>
     </nav>
   );

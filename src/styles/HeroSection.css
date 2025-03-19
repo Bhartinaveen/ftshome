@@ -24,7 +24,14 @@
     z-index: 1;
 }
 
-/* Modern Rectangular Button */
+/* Button Container */
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+/* Default Modern Rectangular Button */
 .hero-btn {
     background: linear-gradient(90deg, #1e3c72, #2a5298); /* Deep blue gradient */
     border: 2px solid transparent;
@@ -53,4 +60,16 @@
 .hero-btn:active {
     transform: scale(0.95);
     box-shadow: 0 2px 8px rgba(30, 60, 114, 0.4);
+}
+
+/* Special Offer Button - Different Color */
+.special-offer-btn {
+    background: linear-gradient(90deg, #ff5733, #ff8c42); /* Orange gradient */
+    border: 2px solid transparent;
+}
+
+/* Special Offer Button Hover */
+.special-offer-btn:hover {
+    background: linear-gradient(90deg, #ff8c42, #ff5733);
+    border-color: white;
 }

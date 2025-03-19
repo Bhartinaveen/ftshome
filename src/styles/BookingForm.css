@@ -2,18 +2,18 @@
 .booking-container {
     text-align: center;
     background: linear-gradient(135deg, #1e3c72, #2a5298); /* Dark blue gradient */
-    padding: 20px;
+    padding: 15px; /* Reduce padding */
     border-radius: 10px;
     box-shadow: 0 6px 15px rgba(30, 60, 114, 0.5);
-    max-width: 650px; /* Reduced Width */
-    margin: 40px auto;
+    max-width: 800px; /* Maintain width */
+    margin: 20px auto; /* Reduce top and bottom margin */
 }
 
 /* Booking Title */
 .booking-container h2 {
     color: white;
-    font-size: 20px;
-    margin-bottom: 15px;
+    font-size: 20px; /* Slightly reduce font size */
+    margin-bottom: 10px; /* Reduce space below the title */
 }
 
 /* Form in One Row */
@@ -21,63 +21,47 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 10px;
+    gap: 8px; /* Reduce spacing between elements */
+    flex-wrap: wrap;
+    padding: 5px; /* Reduce padding */
 }
 
 /* Input Fields */
 .input-field {
-    padding: 10px;
-    font-size: 14px;
+    padding: 8px; /* Reduce padding */
+    font-size: 13px; /* Slightly smaller font */
     border: 2px solid transparent;
     border-radius: 6px;
     outline: none;
     transition: all 0.3s ease-in-out;
     flex: 1;
+    min-width: 120px; /* Prevents items from shrinking too much */
 }
 
-/* Input Field Hover Effect */
-.input-field:focus {
-    border-color: #ffcc00; /* Yellow glow */
-    box-shadow: 0 0 10px rgba(255, 204, 0, 0.7);
-}
-
-/* Booking Button (Lighter Blue Gradient) */
+/* Booking Button */
 .booking-btn {
     background: linear-gradient(90deg, #4a90e2, #5eb3f6); /* Brighter blue */
     color: white;
-    font-size: 16px;
+    font-size: 14px; /* Reduce font size */
     font-weight: bold;
     text-transform: uppercase;
-    padding: 10px 18px;
+    padding: 8px 16px; /* Reduce padding */
     border: 2px solid transparent;
     border-radius: 6px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-    box-shadow: 0 4px 10px rgba(74, 144, 226, 0.3);
-}
-
-/* Button Hover Effect */
-.booking-btn:hover {
-    background: linear-gradient(90deg, #5eb3f6, #4a90e2); /* Reverse gradient */
-    border-color: #ffffff; /* White border appears */
-    transform: scale(1.05);
-    box-shadow: 0 6px 15px rgba(74, 144, 226, 0.5);
-}
-
-/* Button Click Effect */
-.booking-btn:active {
-    transform: scale(0.95);
-    box-shadow: 0 2px 8px rgba(74, 144, 226, 0.4);
+    box-shadow: 0 3px 8px rgba(74, 144, 226, 0.3); /* Reduce shadow */
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
     .booking-form {
         flex-direction: column;
-        gap: 10px;
+        gap: 8px;
     }
 
     .booking-btn {
         width: 100%;
+        padding: 10px; /* Keep button usable on mobile */
     }
 }
