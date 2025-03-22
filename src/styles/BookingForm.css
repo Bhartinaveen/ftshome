@@ -1,7 +1,7 @@
 /* Booking Section Container */
 .booking-container {
     text-align: center;
-    background: linear-gradient(135deg, #1e3c72, #2a5298); /* Dark blue gradient */
+    background: linear-gradient(135deg, #c7d2e7, #2a5298); /* Dark blue gradient */
     padding: 15px; /* Reduce padding */
     border-radius: 10px;
     box-shadow: 0 6px 15px rgba(30, 60, 114, 0.5);
@@ -65,3 +65,5 @@
         padding: 10px; /* Keep button usable on mobile */
     }
 }
+
+

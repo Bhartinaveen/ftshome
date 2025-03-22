@@ -3,8 +3,8 @@ import "../styles/SpecialOffers.css";
 
 const offers = [
   { title: "Honeymoon", price: "$699 /night", image: "/images/honeymoon.jpg" },
-  { title: "Beach Retreat", price: "$499 /night", image: "/images/beach.jpg" },
-  { title: "Mountain Escape", price: "$599 /night", image: "/images/mountain.jpg" },
+  { title: "Beach Retreat", price: "$499 /night", image: "/images/room.jpg" },
+  { title: "Mountain Escape", price: "$599 /night", image:"/images/dining.jpeg"},
   
 ];
 

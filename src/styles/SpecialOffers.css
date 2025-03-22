@@ -40,3 +40,12 @@
     font-size: 1rem;
     color: #555;
 }
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    background: linear-gradient(to right, rgb(255, 0, 150), rgb(0, 204, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  

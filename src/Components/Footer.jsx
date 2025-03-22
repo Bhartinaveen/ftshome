@@ -13,13 +13,13 @@ const Footer = () => {
         <div className="footer-content">
           {/* Company Logo */}
           <div className="footer-logo">
-            <img src="/images/companylogo.jpg" alt="Livo Hotels Logo" />
+            <img src="/images/companylogo.jpg" alt="Livo Hotels Logo" className="footer-logo-img" />
           </div>
 
           {/* Hotel Booking App Description */}
           <div className="footer-description">
             <p>
-              Livo is a premium hotel booking platform that provides seamless and
+              First Home Stay is a premium hotel booking platform that provides seamless and
               hassle-free hotel reservations. We offer curated accommodations with
               the best deals, ensuring a luxurious and affordable stay for travelers
               worldwide.
@@ -41,7 +41,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <p className="footer-copy">© 2025 Livo Hotels. All rights reserved.</p>
+        <p className="footer-copy">© 2025 First Track Solution Technology. All rights reserved.</p>
       </footer>
     </>
   );

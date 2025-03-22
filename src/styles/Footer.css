@@ -72,3 +72,26 @@
   height: 200px;
   display: block;
 }
+
+
+.footer-logo img {
+  width: 60px;  
+  height: 60px; 
+  border-radius: 50%; 
+  object-fit: cover; 
+  border: 3px solid transparent; /* Transparent border */
+  background: linear-gradient(white, white) padding-box, 
+              linear-gradient(90deg, rgb(30, 60, 114), rgb(255, 140, 66)) border-box; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Add Animation for a glowing effect */
+@keyframes glowing-border {
+  0% { border-color: rgb(30, 60, 114); }
+  50% { border-color: rgb(255, 140, 66); }
+  100% { border-color: rgb(30, 60, 114); }
+}
+
+.footer-logo img:hover {
+  animation: glowing-border 1.5s infinite alternate; /* Smooth color transition */
+}
