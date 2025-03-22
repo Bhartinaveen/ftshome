@@ -8,12 +8,12 @@ const Navbar = () => {
         <img src="/images/logo.png" alt="Hotel Logo" className="logo-img" />
       </div>
       <ul className="nav-links">
-        <li><a href="#">Home</a></li>
+        {/* <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Newsletter</a></li>
         <li><a href="#">Rooms</a></li>
         <li><a href="#">Services</a></li>
-        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Pricing</a></li> */}
 
         {/* Login and Sign-Up Buttons */}
         <li className="auth-buttons">
