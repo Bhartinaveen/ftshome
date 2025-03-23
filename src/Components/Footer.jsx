@@ -4,26 +4,29 @@ import "../styles/Footer.css";
 const Footer = () => {
   return (
     <>
-      {/* Full-width Top Image */}
-      <div className="footer-top-image">
-        <img src="/images/map.png" alt="Livo Hotels Banner" />
+      <div className="footer-container">
+        {/* Left-Side Map Image */}
+        <div className="footer-map">
+          <img src="/images/map.jpeg" alt="Livo Hotels Map" className="map-image" />
+        </div>
+
+        {/* Right-Side Description */}
+        <div className="footer-description">
+          <h3>Why Choose First Home Stay?</h3>
+          <p className="animated-text">
+            Experience seamless <span>hotel booking</span> with **First Home Stay**! 
+            Whether you're planning a luxurious getaway or a budget-friendly stay, 
+            our platform offers **handpicked accommodations** with unbeatable deals. 
+            Enjoy **24/7 customer support**, easy cancellations, and the best price guarantees!
+          </p>
+        </div>
       </div>
 
       <footer className="footer">
         <div className="footer-content">
           {/* Company Logo */}
           <div className="footer-logo">
-            <img src="/images/companylogo.jpg" alt="Livo Hotels Logo" className="footer-logo-img" />
-          </div>
-
-          {/* Hotel Booking App Description */}
-          <div className="footer-description">
-            <p>
-              First Home Stay is a premium hotel booking platform that provides seamless and
-              hassle-free hotel reservations. We offer curated accommodations with
-              the best deals, ensuring a luxurious and affordable stay for travelers
-              worldwide.
-            </p>
+            <img src="/images/companylogo.jpg" alt="Livo Hotels Logo" />
           </div>
 
           {/* Contact Information */}
