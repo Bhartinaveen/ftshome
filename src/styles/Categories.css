@@ -29,19 +29,6 @@
   object-fit: cover;
 }
 
-.hotel-name {
-  font-size: 11px; /* Smaller font */
-  font-weight: bold;
-  color: #06457a;
-  margin-top: 3px;
-}
-
-.category-name {
-  font-size: 12px; /* Reduce font size */
-  font-weight: 600;
-  color: #075a9c;
-  margin-top: 4px;
-}
 
 .rating {
   margin: 2px 0;
@@ -111,8 +98,9 @@
 }
 
 .category-name {
-  font-size: 18px;
+  font-size: 10px;
   font-weight: bold;
+  color: #e6a564;
 }
 
 .rating {

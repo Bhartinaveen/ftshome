@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import "../styles/SpecialOffers.css";
 
 const offers = [
-  { title: "Honeymoon", price: "$699 /night", image: "/images/honeymoon.jpg" },
-  { title: "Beach Retreat", price: "$499 /night", image: "/images/room.jpg" },
-  { title: "Mountain Escape", price: "$599 /night", image: "/images/dining.jpeg" },
+  { title: "Honeymoon", price: "$699 /night", image: "/images/honeymoon.jpg", offer: "20% Off" },
+  { title: "Beach Retreat", price: "$499 /night", image: "/images/room.jpg", offer: "Limited Time Deal" },
+  { title: "Mountain Escape", price: "$599 /night", image: "/images/dining.jpeg", offer: "Free Breakfast" },
 ];
 
 const bulletins = [
@@ -20,7 +20,7 @@ const SpecialOffers = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentBulletin((prev) => (prev + 1) % bulletins.length);
-    }, 4000); // Change every 4 seconds
+    }, 4000);
 
     return () => clearInterval(interval);
   }, []);
@@ -31,9 +31,11 @@ const SpecialOffers = () => {
       <div className="offers">
         {offers.map((offer, index) => (
           <div key={index} className="offer-card">
+            <div className="special-tag">Special Offer</div>
             <img src={offer.image} alt={offer.title} />
-            <h3>{offer.title}</h3>
+            <h3><strong>{offer.title}</strong></h3>
             <p>{offer.price}</p>
+            <p className="offer-text">{offer.offer}</p>
           </div>
         ))}
       </div>

@@ -2,11 +2,11 @@ import React from "react";
 import "../styles/Categories.css"; // Import external CSS
 
 const categories = [
-  { name: "Rooms", image: "/images/room.jpg", rating: 4.5, price: "$699/night", hotel: "Ocean View" },
-  { name: "Dining", image: "/images/dining.jpeg", rating: 3.2, price: "$499/table", hotel: "Ocean View" },
-  { name: "Swimming", image: "/images/room.jpg", rating: 4.7, price: "$299/session", hotel: "Ocean View" },
-  { name: "Gym", image: "/images/honeymoon.jpg", rating: 3.9, price: "$199/month", hotel: "Ocean View" },
-  { name: "Spa", image: "/images/room.jpg", rating: 5.0, price: "$599/session", hotel: "Ocean View" },
+  { name: "Plot Number 2923, Gali Number 4, Near Sangatrashan Chowk, Paharganj, Delhi", image: "/images/h1.jpg", rating: 4.5, price: "$699/night", hotel: "Hotels in Paharganj, Delhi" },
+  { name: "10184, Hotel Landmark I N N, Arya Samaj Road, Karol Bagh, Delhi", image: "/images/h2.jpg", rating: 3.2, price: "$499/table", hotel: "Hotel O Hotel Landmark Inn" },
+  { name: "Bella Vista Villa", image: "/images/h3.jpg", rating: 4.7, price: "$299/session", hotel: "Malavli, near Lonavala." },
+  { name: "Collection O Radha KanhaiyaOcean View", image: "/images/h4.jpg", rating: 3.9, price: "$199/month", hotel: "En-43, Sector 5, Near Webel More Salt Lake, Kolkata" },
+  { name: "ITC Grand Bharat Retreat, Gurugram", image: "/images/h5.jpg", rating: 5.0, price: "$599/session", hotel: "1214056 sq. m. of serenity - a short drive from Delhi" },
   // { name: "Bar", image: "/images/bar.jpg", rating: 2.8, price: "$99/drink", hotel: "Ocean View" },
   // { name: "Parking", image: "/images/parking.jpg", rating: 4.1, price: "$49/day", hotel: "Ocean View" },
   // { name: "Lounge", image: "/images/lounge.jpg", rating: 4.6, price: "$199/session", hotel: "Ocean View" },

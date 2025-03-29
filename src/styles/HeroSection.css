@@ -1,3 +1,4 @@
+/* Hero Section */
 .hero {
     position: relative;
     width: 100%;
@@ -31,13 +32,11 @@
     justify-content: center;
 }
 
-/* Default Modern Rectangular Button */
-.hero-btn {
-    background: linear-gradient(90deg, #1e3c72, #2a5298);
-    border: 2px solid transparent;
-    color: white;
-    padding: 14px 40px;
-    font-size: 18px;
+/* Ensure both buttons have the same size */
+.hero-btn,
+.special-offer-btn {
+    padding: 14px 40px; /* Same padding */
+    font-size: 12px; /* Same font size */
     font-weight: bold;
     text-transform: uppercase;
     border-radius: 5px;
@@ -45,6 +44,16 @@
     transition: all 0.3s ease-in-out;
     position: relative;
     overflow: hidden;
+    text-align: center;
+    display: inline-block;
+    min-width: 160px; /* Ensures both buttons have equal width */
+    border: 2px solid transparent;
+}
+
+/* Default Modern Rectangular Button */
+.hero-btn {
+    background: linear-gradient(90deg, #1e3c72, #2a5298);
+    color: white;
     box-shadow: 0 4px 10px rgba(30, 60, 114, 0.3);
 }
 
@@ -62,14 +71,48 @@
     box-shadow: 0 2px 8px rgba(30, 60, 114, 0.4);
 }
 
-/* Special Offer Button - Different Color */
+/* Special Offer Button - Same Size as Book Now Button */
 .special-offer-btn {
     background: linear-gradient(90deg, #ff5733, #ff8c42);
-    border: 2px solid transparent;
+    color: white;
+    box-shadow: 0 4px 10px rgba(255, 87, 51, 0.3);
 }
 
 /* Special Offer Button Hover */
 .special-offer-btn:hover {
     background: linear-gradient(90deg, #ff8c42, #ff5733);
     border-color: white;
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(255, 87, 51, 0.5);
 }
+
+/* Click Effect */
+.special-offer-btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 8px rgba(255, 87, 51, 0.4);
+}
+#special{
+
+    width: 40px;
+    height:70px;
+}
+
+
+.hero-text h1 {
+    font-size: 2rem; /* Decreased from 3rem to 2rem */
+    font-weight: bold;
+    display: inline-block;
+  }
+  
+  .hero-text h1 .blue-text {
+    background: linear-gradient(to right, #022646, #013d40); /* Blue gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .hero-text h1 .orange-text {
+    background: linear-gradient(to right, #f93b0b, #feb47b); /* Orange gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  

@@ -1,116 +1,34 @@
+/* Footer Section */
 .footer {
   background-color: #222;
   color: white;
-  padding: 20px;
+  padding: 30px 20px;
   text-align: center;
 }
 
-/* Banner Section */
-.footer-banner {
-  width: 100%;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.map-image {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-.map-description {
-  margin-top: 10px;
-  font-size: 14px;
-  color: #ddd;
-}
-
-/* Footer Content */
-.footer-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  gap: 20px;
-}
-
-.footer-logo img {
-  width: 150px;
-}
-
-.footer-description {
-  max-width: 400px;
-}
-
-.footer-contact a {
-  color: #f8d210;
-  text-decoration: none;
-}
-
-.footer-feedback button {
-  background-color: #f8d210;
-  border: none;
-  padding: 10px 15px;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-.footer-feedback button:hover {
-  background-color: #e6c000;
-}
-
-.footer-copy {
-  margin-top: 20px;
-  font-size: 14px;
-}
-.footer-top-image {
-  width: 100%;
-}
-
+/* Top Banner Image */
 .footer-top-image img {
   width: 100%;
   height: 200px;
+  object-fit: cover;
   display: block;
+  border-radius: 5px;
 }
 
-
-.footer-logo img {
-  width: 60px;  
-  height: 60px; 
-  border-radius: 50%; 
-  object-fit: cover; 
-  border: 3px solid transparent; /* Transparent border */
-  background: linear-gradient(white, white) padding-box, 
-              linear-gradient(90deg, rgb(30, 60, 114), rgb(255, 140, 66)) border-box; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Add Animation for a glowing effect */
-@keyframes glowing-border {
-  0% { border-color: rgb(30, 60, 114); }
-  50% { border-color: rgb(255, 140, 66); }
-  100% { border-color: rgb(30, 60, 114); }
-}
-
-.footer-logo img:hover {
-  animation: glowing-border 1.5s infinite alternate; /* Smooth color transition */
-}
-
-
-/* colour  */
-
+/* Footer Container */
 .footer-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
   flex-wrap: wrap;
+  padding: 20px;
+  gap: 20px;
 }
 
 /* Map Image Section */
 .footer-map {
   flex: 1;
-  max-width: 30%; /* Reduced map width */
+  max-width: 30%;
 }
 
 .map-image {
@@ -123,15 +41,15 @@
 }
 
 .map-image:hover {
-  transform: scale(1.03);
+  transform: scale(1.05);
 }
 
 /* Hotel Booking Description */
 .footer-description-container {
-  flex: 3; /* Increased space for text */
+  flex: 3;
   display: flex;
   justify-content: flex-start;
-  padding-left: 40px; /* Adjust spacing */
+  padding-left: 40px;
 }
 
 .footer-description {
@@ -139,7 +57,7 @@
   font-weight: normal;
   text-align: left;
   line-height: 1.8;
-  max-width: 700px; /* Increased text width */
+  max-width: 700px;
   color: white;
   background: linear-gradient(90deg, rgba(255, 140, 0, 0.8), rgba(0, 191, 255, 0.8), rgba(34, 139, 34, 0.8));
   -webkit-background-clip: text;
@@ -149,7 +67,7 @@
   animation: fadeInText 1.5s ease-in-out forwards;
 }
 
-/* Fade-in animation */
+/* Fade-in Animation */
 @keyframes fadeInText {
   from {
     opacity: 0;
@@ -161,5 +79,139 @@
   }
 }
 
-/* footer */
+/* Footer Content */
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #444;
+}
 
+/* Footer Logo */
+.footer-logo img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid transparent;
+
+  
+}
+
+
+
+/* Footer Contact */
+.footer-contact {
+  text-align: left;
+}
+
+.footer-contact h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #f8d210;
+}
+
+.footer-contact a {
+  color: #f8d210;
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  text-decoration: underline;
+}
+
+/* Feedback Button */
+.footer-feedback button {
+  background-color: #f8d210;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+}
+
+.footer-feedback button:hover {
+  background-color: #e6c000;
+  transform: scale(1.05);
+}
+
+/* Footer Links */
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 30px 0;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 220px;
+  margin: 10px;
+  text-align: left;
+}
+
+.footer-column h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #f8b400;
+  border-bottom: 2px solid #f8b400;
+  padding-bottom: 5px;
+  display: inline-block;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #bbb;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.footer-column ul li:hover {
+  color: #f8b400;
+  transform: translateX(5px);
+}
+
+/* Footer Copyright */
+.footer-copy {
+  text-align: center;
+  font-size: 14px;
+  color: #aaa;
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-description-container {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-column {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}

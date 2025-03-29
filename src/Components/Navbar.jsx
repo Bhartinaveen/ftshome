@@ -1,8 +1,22 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "../styles/Navbar.css";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const menuRef = useRef(null);
+
+  // Close menu when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setMenuOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   return (
     <nav className="navbar">
@@ -14,28 +28,30 @@ const Navbar = () => {
         <span className="company-name">First Home Stay</span>
       </div>
 
-      <ul className="nav-links">
-        <li className="auth-buttons">
-          <button className="login-btn">Login</button>
-          <button className="signup-btn">Sign Up</button>
+      <div className="menu-container" ref={menuRef}>
+        {/* Menu Button */}
+        <button
+          className="menu-btn"
+          aria-label="Open menu"
+          onClick={() => setMenuOpen((prev) => !prev)}
+        >
+          ☰
+        </button>
 
-          {/* Menu Button */}
-          <div className="menu-container">
-            <button className="menu-btn" onClick={() => setMenuOpen(!menuOpen)}>☰</button>
-            {menuOpen && (
-              <div className="dropdown-menu">
-                <p>📞 Contact us</p>
-                <p>👤 Personal Account</p>
-                <p>📍 Your Location</p>
-                <p>🛎️ My-Booking</p>
-                <p>❓ Help</p>
-                <p>ℹ️ About Us</p>
-                <p className="logout">🚪 Logout</p>
-              </div>
-            )}
+        {menuOpen && (
+          <div className="dropdown-menu">
+            <p>🔑 Sign In</p>
+            <p>📝 Sign Up</p>
+            <p>📞 Contact us</p>
+            <p>👤 Personal Account</p>
+            <p>📍 Your Location</p>
+            <p>🛎️ My Booking</p>
+            <p>❓ Help</p>
+            <p>ℹ️ About Us</p>
+            <p className="logout">🚪 Logout</p>
           </div>
-        </li>
-      </ul>
+        )}
+      </div>
     </nav>
   );
 };
