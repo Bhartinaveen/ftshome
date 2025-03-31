@@ -39,7 +39,7 @@ const Navbar = () => {
         </button>
 
         {menuOpen && (
-          <div className="dropdown-menu">
+          <div className="dropdown-menu z-50">
             <p>🔑 Sign In</p>
             <p>📝 Sign Up</p>
             <p>📞 Contact us</p>

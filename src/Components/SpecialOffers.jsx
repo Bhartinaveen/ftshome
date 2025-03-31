@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import "../styles/SpecialOffers.css";
 
 const offers = [
-  { title: "Honeymoon", price: "$699 /night", image: "/images/honeymoon.jpg", offer: "20% Off" },
-  { title: "Beach Retreat", price: "$499 /night", image: "/images/room.jpg", offer: "Limited Time Deal" },
-  { title: "Mountain Escape", price: "$599 /night", image: "/images/dining.jpeg", offer: "Free Breakfast" },
+  { title: "Honeymoon", price: "₹5,000 /night", image: "/images/honeymoon.jpg", offer: "20% Off" },
+  { title: "Beach Retreat", price: "₹4,500 /night", image: "/images/room.jpg", offer: "Limited Time Deal" },
+  { title: "Mountain Escape", price: "₹9,900 /night", image: "/images/dining.jpeg", offer: "Free Breakfast" },
 ];
 
 const bulletins = [
