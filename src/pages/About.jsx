@@ -1,5 +1,5 @@
-// src/pages/About.js
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
@@ -7,19 +7,20 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 const About = () => {
+  const navigate = useNavigate();
+
   return (
-    <div className="bg-gray-100 min-h-screen py-10 px-10 md:px-32 flex justify-center items-start font-serif">
-      <div className="max-w-7xl mx-auto bg-white p-12 rounded-xl shadow-lg mt-8 min-h-[90vh]">
-        <h1 className="text-3xl md:text-4xl font-bold text-center mb-6" style={{ color: "rgb(255, 165, 0)" }}>
+    <div className="bg-gray-100 min-h-screen py-10 px-4 md:px-10 lg:px-32 flex justify-center items-start font-serif">
+      <div className="max-w-7xl mx-auto bg-white p-6 sm:p-10 md:p-12 rounded-xl shadow-lg mt-8 min-h-[90vh]">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-6" style={{ color: "rgb(255, 165, 0)" }}>
           About Our Hotel O Hotel Landmark Inn
         </h1>
 
-        <p className="text-lg text-center mb-6" style={{ color: "rgb(0, 102, 204)" }}>
+        <p className="text-base sm:text-lg text-center mb-6" style={{ color: "rgb(0, 102, 204)" }}>
           We offer the best deals on hotels, ensuring a smooth and seamless booking experience for all travelers.
         </p>
 
-        {/* Hotel Information */}
-        <div className="grid md:grid-cols-2 gap-10 items-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-10 items-center">
           <div className="relative flex flex-col items-center">
             <Swiper
               modules={[Navigation, Pagination, Autoplay]}
@@ -50,13 +51,15 @@ const About = () => {
                 <button className="px-5 py-2 border border-gray-600 font-medium rounded-md hover:bg-gray-200 transition">
                   View Details
                 </button>
-                <button className="px-5 py-2 text-white font-medium rounded-md transition relative overflow-hidden"
-                  style={{ 
-                    background: "linear-gradient(90deg, rgb(255, 165, 0), rgb(0, 102, 204))", 
+                <button
+                  className="px-5 py-2 text-white font-medium rounded-md transition relative overflow-hidden"
+                  style={{
+                    background: "linear-gradient(90deg, rgb(255, 165, 0), rgb(0, 102, 204))",
                     boxShadow: "0 4px 15px rgba(0, 102, 204, 0.5)"
                   }}
-                  onMouseOver={(e) => e.target.style.boxShadow = "0 6px 20px rgba(0, 102, 204, 0.8)"}
-                  onMouseOut={(e) => e.target.style.boxShadow = "0 4px 15px rgba(0, 102, 204, 0.5)"}
+                  onMouseOver={(e) => (e.target.style.boxShadow = "0 6px 20px rgba(0, 102, 204, 0.8)")}
+                  onMouseOut={(e) => (e.target.style.boxShadow = "0 4px 15px rgba(0, 102, 204, 0.5)")}
+                  onClick={() => navigate("/payment")}
                 >
                   Book Now
                 </button>
@@ -64,11 +67,11 @@ const About = () => {
             </div>
           </div>
 
-          <div className="flex flex-col justify-center relative -top-20 size-100">
-            <h2 className="text-2xl font-semibold mb-4 text-center md:text-left" style={{ color: "rgb(255, 140, 0)" }}>
+          <div className="flex flex-col justify-center relative -top-2 size-100">
+            <h2 className="text-xl sm:text-2xl font-semibold mb-4 text-center sm:text-left" style={{ color: "rgb(255, 140, 0)" }}>
               Why Choose Us?
             </h2>
-            <ul className="grid grid-cols-2 gap-4" style={{ color: "rgb(0, 102, 204)" }}>
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4" style={{ color: "rgb(0, 102, 204)" }}>
               <li className="flex items-center gap-2">🏨 Wide range of hotels</li>
               <li className="flex items-center gap-2">💳 Secure booking process</li>
               <li className="flex items-center gap-2">⭐ 4.6+ star ratings</li>

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import "../styles/SpecialOffers.css";
 
 const offers = [
@@ -30,13 +31,15 @@ const SpecialOffers = () => {
       <h2>Best Offers of the Month</h2>
       <div className="offers">
         {offers.map((offer, index) => (
-          <div key={index} className="offer-card">
-            <div className="special-tag">Special Offer</div>
-            <img src={offer.image} alt={offer.title} />
-            <h3><strong>{offer.title}</strong></h3>
-            <p>{offer.price}</p>
-            <p className="offer-text">{offer.offer}</p>
-          </div>
+          <Link to="/about" key={index} className="offer-card-link">
+            <div className="offer-card">
+              <div className="special-tag">Special Offer</div>
+              <img src={offer.image} alt={offer.title} />
+              <h3><strong>{offer.title}</strong></h3>
+              <p>{offer.price}</p>
+              <p className="offer-text">{offer.offer}</p>
+            </div>
+          </Link>
         ))}
       </div>
       <div 

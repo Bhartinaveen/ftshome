@@ -1,7 +1,8 @@
 import React from "react";
-import "../styles/Categories.css"; // Import external CSS
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
+import "../styles/Categories.css";
 
-const usdToInr = 83; // Approximate conversion rate (update as needed)
+const usdToInr = 83;
 
 const categories = [
   { name: "Plot Number 2923, Gali Number 4, Near Sangatrashan Chowk, Paharganj, Delhi", image: "/images/h1.jpg", rating: 4.5, price: 69, unit: "night", hotel: "Hotels in Paharganj, Delhi" },
@@ -11,7 +12,6 @@ const categories = [
   { name: "ITC Grand Bharat Retreat, Gurugram", image: "/images/h5.jpg", rating: 5.0, price: 59, unit: "session", hotel: "1214056 sq. m. of serenity - a short drive from Delhi" },
 ];
 
-// Function to generate star ratings
 const getStarRating = (rating) => {
   const fullStars = Math.floor(rating);
   const hasHalfStar = rating % 1 >= 0.5;
@@ -31,13 +31,15 @@ const Categories = () => {
   return (
     <div className="categories">
       {categories.map((cat, index) => (
-        <div key={index} className="category-card">
-          <img src={cat.image} alt={cat.name} className="category-image" />
-          <p className="hotel-name">{cat.hotel}</p>
-          <p className="category-name">{cat.name}</p>
-          <div className="rating">{getStarRating(cat.rating)}</div>
-          <p className="price">₹{(cat.price * usdToInr).toLocaleString("en-IN")}/{cat.unit}</p>
-        </div>
+        <Link key={index} to={`/about`} className="category-link">
+          <div className="category-card">
+            <img src={cat.image} alt={cat.name} className="category-image" />
+            <p className="hotel-name">{cat.hotel}</p>
+            <p className="category-name">{cat.name}</p>
+            <div className="rating">{getStarRating(cat.rating)}</div>
+            <p className="price">₹{(cat.price * usdToInr).toLocaleString("en-IN")}/{cat.unit}</p>
+          </div>
+        </Link>
       ))}
     </div>
   );
