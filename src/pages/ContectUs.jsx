@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../Components/Footer";
 
 const ContactUs = () => {
   return (
@@ -15,6 +16,7 @@ const ContactUs = () => {
           <p className="flex items-center text-gray-700"><span className="mr-2">🌍</span><strong className="text-purple-700">Service Coverage:</strong> We provide top-tier hotel booking services all over India, ensuring comfort and convenience for our customers.</p>
           <p className="flex items-center text-gray-700"><span className="mr-2">🏨</span><strong className="text-purple-700">About Us:</strong> Livo is a premier hotel booking platform offering seamless and reliable services for travelers across India. Our mission is to make hotel bookings hassle-free with a user-friendly interface and best-in-class customer support.</p>
         </div>
+        <Footer />
       </div>
     </div>
   );

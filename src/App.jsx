@@ -10,6 +10,7 @@ import Footer from "./Components/Footer";
 import About from "./pages/About"; // Import About Page
 import ContactUs from "./pages/ContectUs";
 import Payment from "./pages/Payment";
+import Aboutus from "./pages/Aboutus";
 import "./styles/App.css"; 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
         <Route path="/about" element={<About />} /> {/* Fixed About Page Route */}
         <Route path="/payment" element={<Payment />} /> {/* Fixed About Page Route */}
         <Route path="/contectus" element={<ContactUs />} /> {/* Fixed About Page Route */}
+        <Route path="/aboutus" element={<Aboutus />} /> {/* Fixed About Page Route */}
         
       
         

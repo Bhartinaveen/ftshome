@@ -4,21 +4,7 @@ import "../styles/Footer.css";
 const Footer = () => {
   return (
     <>
-      <div className="footer-container">
-        <div className="footer-map">
-          <img src="/images/map.jpeg" alt="Livo Hotels Map" className="map-image" />
-        </div>
-
-        <div className="footer-description">
-          <h3>Why Choose First Home Stay?</h3>
-          <p className="animated-text">
-            Experience seamless <span>hotel booking</span> with <strong>First Home Stay</strong>!
-            Whether you're planning a luxurious getaway or a budget-friendly stay,
-            our platform offers <strong>handpicked accommodations</strong> with unbeatable deals.
-            Enjoy <strong>24/7 customer support</strong>, easy cancellations, and the best price guarantees!
-          </p>
-        </div>
-      </div>
+    
 
       <footer className="footer">
         <div className="footer-content">

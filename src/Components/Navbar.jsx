@@ -40,14 +40,15 @@ const Navbar = () => {
 
         {menuOpen && (
           <div className="dropdown-menu z-50">
-            <p onClick={() => setShowSignIn(true)}>🔑 Sign In</p>
-            <p>📝 Sign Up</p>
-            <Link to="/contectus" onClick={() => setMenuOpen(false)}>📞 Contact us</Link>
-            <p>👤 Personal Account</p>
-            <p>📍 Your Location</p>
-            <p>🛎️ My Booking</p>
-            <Link to="/contectus" onClick={() => setMenuOpen(false)}>❓ Help</Link>
-            <p>ℹ️ About Us</p>
+            <p onClick={() => setShowSignIn(true)}>🔑Sign In</p>
+            <p>📝Sign Up</p>
+            <Link to="/contectus" onClick={() => setMenuOpen(false)}>📞Contact us</Link>
+            <p>👤Personal Account</p>
+            <p>📍Your Location</p>
+            <p>🛎️My Booking</p>
+            <Link to="/contectus" onClick={() => setMenuOpen(false)}> ❓Help</Link>
+            {/* <p>ℹ️ About Us</p> */}
+            <Link to="/aboutus" onClick={() => setMenuOpen(false)}> ❓About Us </Link>
             <p className="logout">🚪 Logout</p>
           </div>
         )}
