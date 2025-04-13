@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 
 const BookingForm = () => {
-  const [location, setLocation] = useState("Delhi, India");
-  const [checkIn, setCheckIn] = useState("2025-04-13");
-  const [checkOut, setCheckOut] = useState("2025-04-14");
+  const [location, setLocation] = useState("City-Name");
+  const [checkIn, setCheckIn] = useState("Booking-Date");
+  // const [checkOut, setCheckOut] = useState("2025-04-14");
   const [showModal, setShowModal] = useState(false);
   const [rooms, setRooms] = useState([{ guests: 1 }]);
 
