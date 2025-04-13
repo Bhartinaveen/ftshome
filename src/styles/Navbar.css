@@ -191,18 +191,138 @@
 
 .modal-content button {
   padding: 10px;
-  background: rgb(230, 202, 160);
+
   color: rgb(37, 5, 5);
   border: none;
   cursor: pointer;
   border-radius: 2px;
 }
 
-.close-btn {
+/* .close-btn {
   background: rgb(247, 211, 113);
   border: none;
   color: rgb(191, 196, 118);
   padding: 5px;
   cursor: pointer;
   margin-top: 10px;
+} */
+
+
+.dropdown-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #aeb6b7;
+  border-radius: 8px;
+  padding: 10px 0;
+  width: 200px; /* Adjust the width as per your design */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-menu p, .dropdown-menu a {
+  text-align:left;
+  margin: 3px 0;
+  padding: 4px;
+  width: 80%;
+  cursor: pointer;
+  text-decoration: none;
+  color: #0a3c39;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-menu p:hover, .dropdown-menu a:hover {
+  background-color: #d0f9f9;
+}
+
+.menu-container {
+  position: relative;
+}
+
+.menu-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+  
+
+/* cross */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  position: relative;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.close-btn {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #333;
+}
+
+.close-btn:hover {
+  color: red;
+}
+
+.modal-content input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+.modal-content button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.modal-content button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+ /* border */
+
+ .modal-content input {
+  border: 2px solid #ccc; /* Light grey border */
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+}
+
+.modal-content input:focus {
+  border-color: #007BFF; /* Blue border on focus */
 }

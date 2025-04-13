@@ -1,28 +1,35 @@
-import React from "react";
-import "../styles/HeroSection.css";
-import { useRef, useState ,useEffect} from "react";
-
+import React, { useRef, useState, useEffect } from "react";
 
 const HeroSection = () => {
-  const imageref=useRef()
+  const imageref = useRef();
   const [objectYOffset, setObjectYOffset] = useState(0);
-  useEffect(()=>{
-    if (imageref.current){
-      setObjectYOffset(imageref.current.offsetWidth)
-    }
-  },[imageref])
+
+  useEffect(() => {
+    const updateYOffset = () => {
+      if (imageref.current) {
+        setObjectYOffset(imageref.current.offsetWidth);
+      }
+    };
+
+    updateYOffset();
+    window.addEventListener("resize", updateYOffset);
+
+    return () => window.removeEventListener("resize", updateYOffset);
+  }, []);
+
   return (
-    <div className="hero">
-      <img  ref={imageref} className={`bg-center object-[50%_${objectYOffset}px]`} src="/images/hero.avif" alt="Hero" />
-      <div className="hero-text">
-        <h1>
-          <span className="blue-text">Discover Extraordinary</span>{" "}
-          <span className="orange-text">Comfort in Hotels</span>
+    <div className="relative w-full overflow-hidden" >
+      <img
+        ref={imageref}
+        className={`w-full h-[100px] sm:h-[100px] md:h-[400px] object-cover object-[center_${objectYOffset}px]` }
+        src="/images/hl.avif"
+        alt="Hero"
+       />
+      <div className="absolute inset-0 flex items-center justify-center">
+        <h1 className="text-white text-3xl font-bold text-center">
+          {/* <span className="text-blue-500">Discover Extraordinary</span>{" "}
+          <span className="text-orange-500">Comfort in Hotels</span> */}
         </h1>
-        <div className="hero-buttons">
-          <button id="special" className="hero-btn">Book  Now</button>
-          <button id="special" className="hero-btn special-offer-btn">Special Offer</button>
-        </div>
       </div>
     </div>
   );

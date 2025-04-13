@@ -8,7 +8,7 @@
 
 .category-card {
   background: linear-gradient(135deg, #9ddcff, #d6f0ff); 
-  border-radius: 8px; /* Smaller border radius */
+   /* Smaller border radius */
   padding: 8px; /* Reduce padding */
   text-align: center;
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
