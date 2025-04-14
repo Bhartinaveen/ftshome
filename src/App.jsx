@@ -22,7 +22,7 @@ function App() {
           <>
             <HeroSection />
             <div className="app-container">
-              <BookingForm />
+              {/* <BookingForm /> */}
               <Categories />
               <SpecialOffers />
             </div>

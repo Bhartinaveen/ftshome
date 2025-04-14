@@ -213,7 +213,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #aeb6b7;
+  background-color: #d5f6fb;
   border-radius: 8px;
   padding: 10px 0;
   width: 200px; /* Adjust the width as per your design */
@@ -227,7 +227,7 @@
   width: 80%;
   cursor: pointer;
   text-decoration: none;
-  color: #0a3c39;
+  color: #010e0d;
   transition: background-color 0.3s ease;
 }
 
@@ -326,3 +326,4 @@
 .modal-content input:focus {
   border-color: #007BFF; /* Blue border on focus */
 }
+

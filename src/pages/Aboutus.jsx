@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaInstagram, FaTwitter, FaLinkedin, FaYoutube } from 'react-icons/fa';
-
+import Footer from "../Components/Footer";
 const AboutUs = () => {
   return (
     <div className="flex flex-col items-center text-center">
@@ -47,9 +47,12 @@ const AboutUs = () => {
             <FaYoutube />
           </a>
         </div>
-        <p className="mt-4 text-sm">&copy; {new Date().getFullYear()} Copyright@2025 developed by  First Track Solution Technology. All rights reserved.</p>
+        <p className="mt-4 text-sm">&copy; {new Date().getFullYear()} Copyright@2025  First HomeStay. All rights reserved.</p>
+        
       </footer>
+      {/* <Footer /> */}
     </div>
+    
   );
 };
 

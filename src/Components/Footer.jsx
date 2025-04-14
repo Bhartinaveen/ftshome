@@ -1,11 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom"; // <-- Import Link
 import "../styles/Footer.css";
 
 const Footer = () => {
   return (
     <>
-    
-
       <footer className="footer">
         <div className="footer-content">
           <div className="footer-logo">
@@ -14,7 +13,7 @@ const Footer = () => {
 
           <div className="footer-contact">
             <h4>Contact Us</h4>
-            <p>Email: <a href="mailto:support@livohotels.com">support@livohotels.com</a></p>
+            <p>Email: <a href="mailto:support@livohotels.com">support@firsthomestay.com</a></p>
             <p>Helpline: <a href="tel:+911234567890">+91-9040170727</a></p>
           </div>
 
@@ -32,25 +31,23 @@ const Footer = () => {
               <li>Hotels near me</li>
               <li>Hotels in Manali</li>
               <li>Hotels in Nainital</li>
-
               <li>Hotels in Agra</li>
               <li>Hotels in Haridwar</li>
               <li>Hotels in Gurgaon</li>
               <li>Hotels in Coimbatore</li>
-
             </ul>
           </div>
 
           <div className="footer-column">
             <h4>Company</h4>
             <ul>
-              <li>About Us</li>
+              <li><Link to="/aboutus">About Us</Link></li> {/* <-- Updated line */}
               <li>Teams / Careers</li>
               <li>Blogs</li>
               <li>Support</li>
               <li>Investor Relations</li>
-              <li>FTST Circle</li>
-              <li>FTST Frames</li>
+              <li>FirsthomeStay Circle</li>
+              <li>FirsthomeStay Frames</li>
             </ul>
           </div>
 
@@ -65,12 +62,11 @@ const Footer = () => {
               <li>Cyber Security</li>
               <li>Cyber Security Awareness</li>
               <li>Responsible Disclosure</li>
-          
             </ul>
           </div>
         </div>
 
-        <p className="footer-copy">Copyright@2025 developed by  First Track Solution Technology. All rights reserved.</p>
+        <p className="footer-copy">Copyright@2025 First HomeStay. All rights reserved.</p>
       </footer>
     </>
   );

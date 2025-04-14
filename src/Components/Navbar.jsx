@@ -62,14 +62,20 @@ const Navbar = () => {
 
         {menuOpen && (
           <div className="dropdown-menu z-50">
-            <p onClick={() => setShowSignIn(true)}>Sign In</p>
-            <Link to="/contectus" onClick={() => setMenuOpen(false)}>Contact us</Link>
-            <p>Personal Account</p>
-            <p>Your Location</p>
-            <p>My Booking</p>
-            <Link to="/contectus" onClick={() => setMenuOpen(false)}>Help</Link>
+            <p>Home</p>
             <Link to="/aboutus" onClick={() => setMenuOpen(false)}>About Us</Link>
-            <p className="logout">Logout</p>
+            <p>My Booking</p>
+            <p>Your Location</p>
+            <p>Personal Account</p>
+            <Link to="/contectus" onClick={() => setMenuOpen(false)}>Contact us</Link>
+           
+            <p onClick={() => setShowSignIn(true)}>Sign In/sign Up</p>
+            
+             <p>chat</p>
+           
+            {/* <Link to="/contectus" onClick={() => setMenuOpen(false)}>Help</Link> */}
+            
+            <p className="logout"style={{ color: "red" }}>Logout</p>
           </div>
         )}
       </div>
@@ -79,7 +85,7 @@ const Navbar = () => {
         <div className="modal-overlay z-50">
           <div className="modal-content">
             <div className="modal-header">
-              <h2>Sign In</h2>
+              <h2>Sign In/Sign Up</h2>
               <button className="close-btn" onClick={() => setShowSignIn(false)}>✖</button>
             </div>
             <form onSubmit={handleSignInSubmit}>
