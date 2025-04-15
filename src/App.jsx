@@ -33,6 +33,7 @@ function App() {
         <Route path="/payment" element={<Payment />} /> {/* Fixed About Page Route */}
         <Route path="/contectus" element={<ContactUs />} /> {/* Fixed About Page Route */}
         <Route path="/aboutus" element={<Aboutus />} /> {/* Fixed About Page Route */}
+        <Route path="/Home" element={<App />} /> {/* Fixed About Page Route */}
         
       
         

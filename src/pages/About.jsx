@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Autoplay } from "swiper/modules"; // Removed Navigation
+import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import { FaWifi, FaCreditCard, FaStar, FaMapMarkerAlt } from "react-icons/fa";
@@ -9,16 +9,16 @@ import Footer from "../Components/Footer";
 
 const About = () => {
   const navigate = useNavigate();
-  const price = "₹5,000"; // Example price, change as needed
+  const price = "₹5,000";
 
   return (
-    <div className="bg-gradient-to-r from-blue-50 to-indigo-100 min-h-screen py-10 px-4 md:px-10 lg:px-32 flex justify-center items-start font-serif">
-      <div className="max-w-7xl mx-auto bg-white p-6 sm:p-10 md:p-12 rounded-xl shadow-lg mt-8 min-h-[110vh] border border-gray-300">
-        <h1 className="text-4xl font-extrabold text-center mb-6 text-indigo-300 drop-shadow-md">
+    <div className="bg-gradient-to-r from-blue-50 to-indigo-100 h-screen w-screen flex justify-center items-center font-serif">
+      <div className="bg-white h-screen w-screen p-6 sm:p-10 md:p-12 overflow-y-auto border-t border-gray-300">
+        <h1 className="text-4xl font-extrabold text-center mb-6 text-indigo-600 drop-shadow-md">
           About Our Hotel O Hotel Landmark Inn
         </h1>
 
-        <p className="text-lg text-center mb-6 text-orange-2 00 font-medium">
+        <p className="text-lg text-center mb-6 text-orange-700 font-medium">
           We offer the best deals on hotels, ensuring a smooth and seamless booking experience for all travelers.
         </p>
 
@@ -26,7 +26,7 @@ const About = () => {
           {/* Swiper Section */}
           <div className="relative flex flex-col items-center">
             <Swiper
-              modules={[Pagination, Autoplay]} // Removed Navigation
+              modules={[Pagination, Autoplay]}
               pagination={{ clickable: true }}
               autoplay={{ delay: 3000 }}
               loop={true}
@@ -60,7 +60,7 @@ const About = () => {
             </div>
 
             <div className="flex items-center space-x-12 mt-6">
-              <button 
+              <button
                 onClick={() => navigate("/payment")}
                 className="bg-indigo-600 text-white px-12 py-4 text-xl font-bold rounded-lg shadow-md hover:bg-indigo-700 transition transform hover:scale-105"
               >
@@ -98,4 +98,3 @@ const About = () => {
 };
 
 export default About;
- 

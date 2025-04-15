@@ -1,6 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom"; // <-- Import Link
+import { Link } from "react-router-dom";
 import "../styles/Footer.css";
+import { FaInstagram, FaTwitter, FaLinkedin, FaYoutube, FaFacebook } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -18,7 +19,14 @@ const Footer = () => {
           </div>
 
           <div className="footer-feedback">
-            <button className="feedback-button" onClick={() => window.location.href = "mailto:feedback@livohotels.com"}>
+            <button
+              className="feedback-button"
+              onClick={() => {
+                const message = encodeURIComponent("Hi, I would like to share my feedback.");
+                const phoneNumber = "919040170727"; // WhatsApp number with country code
+                window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank");
+              }}
+            >
               Send Feedback
             </button>
           </div>
@@ -41,7 +49,7 @@ const Footer = () => {
           <div className="footer-column">
             <h4>Company</h4>
             <ul>
-              <li><Link to="/aboutus">About Us</Link></li> {/* <-- Updated line */}
+              <li><Link to="/aboutus">About Us</Link></li>
               <li>Teams / Careers</li>
               <li>Blogs</li>
               <li>Support</li>
@@ -64,6 +72,24 @@ const Footer = () => {
               <li>Responsible Disclosure</li>
             </ul>
           </div>
+        </div>
+          
+        <div className="flex space-x-6 text-2xl">
+          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400">
+            <FaInstagram />
+          </a>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400">
+            <FaTwitter />
+          </a>
+          <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400">
+            <FaLinkedin />
+          </a>
+          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400">
+            <FaFacebook />
+          </a>
+          <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400">
+            <FaYoutube />
+          </a>
         </div>
 
         <p className="footer-copy">Copyright@2025 First HomeStay. All rights reserved.</p>

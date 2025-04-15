@@ -50,7 +50,7 @@ const Navbar = () => {
           src="/images/companylogo.jpg" 
           alt="Hotel Logo" 
           className="logo-img" 
-          style={{ width: "55px", height: "auto" }}  // Inline CSS to reduce image size
+          style={{ width: "55px", height: "auto" }} 
         />
         <span className="company-name">First Home Stay</span>
       </div>
@@ -62,25 +62,19 @@ const Navbar = () => {
 
         {menuOpen && (
           <div className="dropdown-menu z-50">
-            <p>Home</p>
+            <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
             <Link to="/aboutus" onClick={() => setMenuOpen(false)}>About Us</Link>
             <p>My Booking</p>
             <p>Your Location</p>
             <p>Personal Account</p>
             <Link to="/contectus" onClick={() => setMenuOpen(false)}>Contact us</Link>
-           
-            <p onClick={() => setShowSignIn(true)}>Sign In/sign Up</p>
-            
-             <p>chat</p>
-           
-            {/* <Link to="/contectus" onClick={() => setMenuOpen(false)}>Help</Link> */}
-            
-            <p className="logout"style={{ color: "red" }}>Logout</p>
+            <p onClick={() => setShowSignIn(true)}>Sign In/Sign Up</p>
+            <p onClick={() => window.open("https://wa.me/919876543210", "_blank")}>Chat</p>
+            <p className="logout" style={{ color: "red" }}>Logout</p>
           </div>
         )}
       </div>
 
-      {/* Sign-In Modal */}
       {showSignIn && (
         <div className="modal-overlay z-50">
           <div className="modal-content">

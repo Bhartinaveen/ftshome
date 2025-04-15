@@ -11,8 +11,8 @@ const HeroSection = () => {
       <div className="absolute inset-0 flex items-center justify-center">
         <h1 className="text-white text-3xl sm:text-4xl md:text-5xl font-bold text-center px-4">
           {/* Example Heading */}
-          <span className="text-blue-100">Discover Extraordinary</span>{" "}
-          <span className="text-orange-500">Comfort in Hotels</span>
+          <span className="text-green-200">Discover Extraordinary</span>{" "}
+          <span className="text-orange-700">Comfort in Hotels</span>
         </h1>
       </div>
     </div>
