@@ -213,7 +213,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #d5f6fb;
+  background-color: rgb(199, 232, 255);
+
   border-radius: 8px;
   padding: 10px 0;
   width: 200px; /* Adjust the width as per your design */
@@ -232,7 +233,7 @@
 }
 
 .dropdown-menu p:hover, .dropdown-menu a:hover {
-  background-color: #d0f9f9;
+  background-color: #9ff9ed;
 }
 
 .menu-container {

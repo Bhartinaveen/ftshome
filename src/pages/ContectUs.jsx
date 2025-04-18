@@ -35,14 +35,14 @@ const ContactUs = () => {
               href="mailto:support@livo.com"
               className="text-blue-600 hover:underline"
             >
-              support@livo.com
+              support@firsthomestay.com
             </a>
           </p>
-          <p className="flex items-center text-gray-700">
+          {/* <p className="flex items-center text-gray-700">
             <span className="mr-2">📞</span>
             <strong className="text-purple-700">Helpline No:</strong>{" "}
-            1800-123-4567
-          </p>
+            9040170727
+          </p> */}
           <p className="flex items-center text-gray-700">
             <span className="mr-2">🌍</span>
             <strong className="text-purple-700">Service Coverage:</strong> We
@@ -51,7 +51,7 @@ const ContactUs = () => {
           </p>
           <p className="flex items-center text-gray-700">
             <span className="mr-2">🏨</span>
-            <strong className="text-purple-700">About Us:</strong> Livo is a
+            <strong className="text-purple-700">About Us:</strong> first HomeStay is a
             premier hotel booking platform offering seamless and reliable
             services for travelers across India. Our mission is to make hotel
             bookings hassle-free with a user-friendly interface and

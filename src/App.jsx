@@ -11,6 +11,8 @@ import About from "./pages/About"; // Import About Page
 import ContactUs from "./pages/ContectUs";
 import Payment from "./pages/Payment";
 import Aboutus from "./pages/Aboutus";
+import Register from"./pages/Register";
+import Terms from"./pages/Terms";
 import "./styles/App.css"; 
 
 function App() {
@@ -34,6 +36,8 @@ function App() {
         <Route path="/contectus" element={<ContactUs />} /> {/* Fixed About Page Route */}
         <Route path="/aboutus" element={<Aboutus />} /> {/* Fixed About Page Route */}
         <Route path="/Home" element={<App />} /> {/* Fixed About Page Route */}
+        <Route path="/Register" element={<Register />} /> {/* Fixed About Page Route */}
+        <Route path="/terms" element={<Terms />} /> {/* Fixed About Page Route */}
         
       
         

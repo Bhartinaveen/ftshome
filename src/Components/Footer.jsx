@@ -50,7 +50,7 @@ const Footer = () => {
             <h4>Company</h4>
             <ul>
               <li><Link to="/aboutus">About Us</Link></li>
-              <li>Teams / Careers</li>
+             
               <li>Blogs</li>
               <li>Support</li>
               <li>Investor Relations</li>
@@ -62,10 +62,11 @@ const Footer = () => {
           <div className="footer-column">
             <h4>Policies</h4>
             <ul>
-              <li>Terms and Conditions</li>
+              <li><Link to="/terms">Terms and Conditions</Link></li> {/* Updated */}
+              <li>Refund And Cancellation Policy</li>
               <li>Guest Policies</li>
               <li>Privacy Policy</li>
-              <li>Refund policy</li>
+              
               <li>Trust and Safety</li>
               <li>Cyber Security</li>
               <li>Cyber Security Awareness</li>
@@ -74,7 +75,7 @@ const Footer = () => {
           </div>
         </div>
           
-        <div className="flex space-x-6 text-2xl">
+        <div className=" text-2xl flex gap-4">
           <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400">
             <FaInstagram />
           </a>
