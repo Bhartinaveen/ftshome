@@ -50,8 +50,7 @@ const Footer = () => {
             <h4>Company</h4>
             <ul>
               <li><Link to="/aboutus">About Us</Link></li>
-             
-              <li>Blogs</li>
+              <li><Link to="/blogs">Blogs</Link></li> {/* Added Link to Blog page */}
               <li>Support</li>
               <li>Investor Relations</li>
               <li>FirsthomeStay Circle</li>
@@ -63,10 +62,9 @@ const Footer = () => {
             <h4>Policies</h4>
             <ul>
               <li><Link to="/terms">Terms and Conditions</Link></li> {/* Updated */}
-              <li>Refund And Cancellation Policy</li>
+              <li><Link to="/cancel">Refund And Cancellation Policy</Link></li>
               <li>Guest Policies</li>
               <li>Privacy Policy</li>
-              
               <li>Trust and Safety</li>
               <li>Cyber Security</li>
               <li>Cyber Security Awareness</li>
