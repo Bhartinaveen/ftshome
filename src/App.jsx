@@ -13,7 +13,9 @@ import Payment from "./pages/Payment";
 import Aboutus from "./pages/Aboutus";
 import Register from"./pages/Register";
 import Terms from"./pages/Terms";
+import Cancel from "./pages/Cancel";
 import "./styles/App.css"; 
+import Blog from "./pages/Blog";
 
 function App() {
   return (
@@ -38,6 +40,8 @@ function App() {
         <Route path="/Home" element={<App />} /> {/* Fixed About Page Route */}
         <Route path="/Register" element={<Register />} /> {/* Fixed About Page Route */}
         <Route path="/terms" element={<Terms />} /> {/* Fixed About Page Route */}
+        <Route path="/cancel" element={<Cancel />} /> {/* Fixed About Page Route */}
+        <Route path="/blogs" element={<Blog />} /> {/* Fixed About Page Route */}
         
       
         
