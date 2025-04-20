@@ -2,19 +2,16 @@ import React from 'react';
 
 const Cancel = () => {
   return (
-    <div className="flex justify-center items-center min-h-screen px-4 py-10 bg-gray-50">
-      <div className="max-w-3xl w-full text-center font-sans text-gray-800">
+    <div className="flex justify-center items-center min-h-screen px-4 py-10 ">
+      <div className="max-w-3xl w-full text-center font-sans">
         <h1 className="text-lg md:text-xl lg:text-2xl font-bold mb-4">
           Cancellation & Refund Policy
         </h1>
-        <p className="text-xs md:text-sm lg:text-base mb-4">
+        <p className="text-xs md:text-sm lg:text-base mb-4 caret-blue-700">
           FirstHomestay values guest satisfaction and aims to provide a transparent and fair cancellation and refund process. By proceeding with a booking, guests agree to the following policy terms.
         </p>
 
-        {/* <h2 className="text-base md:text-lg font-semibold mb-3">
-          Cancellation Policy – FirstHomestay
-        </h2> */}
-        <ul className="list-disc list-inside text-left inline-block text-xs md:text-sm lg:text-base space-y-2 text-gray-700">
+        <ul className="list-disc list-inside text-left inline-block text-xs md:text-sm lg:text-base space-y-2 text-blue-1000">
           <li>
             Cancellations are accepted only if requested at least <strong>48 hours</strong> before the check-in time. No cancellations will be permitted beyond this period.
           </li>

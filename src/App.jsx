@@ -16,6 +16,7 @@ import Terms from"./pages/Terms";
 import Cancel from "./pages/Cancel";
 import "./styles/App.css"; 
 import Blog from "./pages/Blog";
+import Support from "./pages/Support";
 
 function App() {
   return (
@@ -42,7 +43,7 @@ function App() {
         <Route path="/terms" element={<Terms />} /> {/* Fixed About Page Route */}
         <Route path="/cancel" element={<Cancel />} /> {/* Fixed About Page Route */}
         <Route path="/blogs" element={<Blog />} /> {/* Fixed About Page Route */}
-        
+        <Route path="/support" element={<Support />} /> {/* Fixed About Page Route */}
       
         
       </Routes>
