@@ -15,7 +15,7 @@ const Footer = () => {
           <div className="footer-contact">
             <h4>Contact Us</h4>
             <p>Email: <a href="mailto:support@livohotels.com">support@firsthomestay.com</a></p>
-            <p>Helpline: <a href="tel:+911234567890">+91-9040170727</a></p>
+            <p>Helpline: <a href="tel:9040170727">+91-9040170727</a></p>
           </div>
 
           <div className="footer-feedback">
@@ -50,8 +50,8 @@ const Footer = () => {
             <h4>Company</h4>
             <ul>
               <li><Link to="/aboutus">About Us</Link></li>
-              <li><Link to="/blogs">Blogs</Link></li> {/* Added Link to Blog page */}
-              <li>Support</li>
+              <li><Link to="/blogs">Blogs</Link></li>
+              <li><Link to="/support">Support</Link></li> {/* Updated to Link */}
               <li>Investor Relations</li>
               <li>FirsthomeStay Circle</li>
               <li>FirsthomeStay Frames</li>
@@ -61,7 +61,7 @@ const Footer = () => {
           <div className="footer-column">
             <h4>Policies</h4>
             <ul>
-              <li><Link to="/terms">Terms and Conditions</Link></li> {/* Updated */}
+              <li><Link to="/terms">Terms and Conditions</Link></li>
               <li><Link to="/cancel">Refund And Cancellation Policy</Link></li>
               <li>Guest Policies</li>
               <li>Privacy Policy</li>
@@ -72,8 +72,8 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-          
-        <div className=" text-2xl flex gap-4">
+
+        <div className="text-2xl flex gap-4">
           <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400">
             <FaInstagram />
           </a>
