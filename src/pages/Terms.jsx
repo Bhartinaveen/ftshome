@@ -1,7 +1,8 @@
 import React from 'react';
-
+import Footer from "../Components/Footer";
 const Terms = () => {
   return (
+    <div>
     <div
       style={{
         display: 'flex',
@@ -213,6 +214,10 @@ const Terms = () => {
           </ul>
         </div>
       </div>
+      
+    </div>
+     {/* Footer */}
+     <Footer className="w-full mt-auto" />
     </div>
   );
 };

@@ -4,11 +4,6 @@ import "../styles/Navbar.css";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [showSignIn, setShowSignIn] = useState(false);
-
-  const [emailOrPhone, setEmailOrPhone] = useState("");
-  const [name, setName] = useState("");
-  const [mobile, setMobile] = useState("");
 
   const menuRef = useRef(null);
 
@@ -23,25 +18,6 @@ const Navbar = () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
-
-  const handleSignInSubmit = (e) => {
-    e.preventDefault();
-
-    if (emailOrPhone.trim() && name.trim() && mobile.trim()) {
-      console.log("Sign in details:", {
-        emailOrPhone,
-        name,
-        mobile,
-      });
-
-      setShowSignIn(false);
-      setEmailOrPhone("");
-      setName("");
-      setMobile("");
-    } else {
-      alert("Please fill in all fields before submitting.");
-    }
-  };
 
   return (
     <nav className="navbar">
@@ -68,48 +44,13 @@ const Navbar = () => {
             <p>📌Your Location</p>
             <p>👤Personal Account</p>
             <Link to="/contectus" onClick={() => setMenuOpen(false)}>☎️Contact us</Link>
-            <p onClick={() => setShowSignIn(true)}>🔐Sign In/Sign Up</p>
+            {/* Removed Sign In/Sign Up Option */}
             <Link to="/register" onClick={() => setMenuOpen(false)}>📝Register</Link>
             <p onClick={() => window.open("https://wa.me/919040170727", "_blank")}>💬Chat</p>
             <p className="logout" style={{ color: "red" }}>🔓Logout</p>
           </div>
         )}
       </div>
-
-      {showSignIn && (
-        <div className="modal-overlay z-50">
-          <div className="modal-content">
-            <div className="modal-header">
-              <h2>Sign In/Sign Up</h2>
-              <button className="close-btn" onClick={() => setShowSignIn(false)}>✖</button>
-            </div>
-            <form onSubmit={handleSignInSubmit}>
-              <input
-                type="text"
-                placeholder="Name"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-                required
-              />
-              <input
-                type="text"
-                placeholder="Mobile Number"
-                value={mobile}
-                onChange={(e) => setMobile(e.target.value)}
-                required
-              />
-              <input
-                type="text"
-                placeholder="Email or Phone Number"
-                value={emailOrPhone}
-                onChange={(e) => setEmailOrPhone(e.target.value)}
-                required
-              />
-              <button type="submit">Sign In</button>
-            </form>
-          </div>
-        </div>
-      )}
     </nav>
   );
 };

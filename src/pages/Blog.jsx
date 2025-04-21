@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-
+import Footer from "../Components/Footer";
 const BlogPost = ({ title, date, category, excerpt, fullText, image }) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
+     
     <div className="bg-white shadow-md rounded-lg overflow-hidden w-full max-w-sm">
       <div className="relative h-48 w-full">
         <img src={image} alt="Blog post" className="object-cover w-full h-full" />
@@ -35,6 +36,7 @@ const BlogPost = ({ title, date, category, excerpt, fullText, image }) => {
 
 const Blog = () => {
   return (
+    <div>
     <div className="min-h-screen flex items-start justify-center bg-white px-4 pt-4">
       {/* Main Centered Container shifted upwards */}
       <div className="w-full max-w-7xl text-center">
@@ -78,7 +80,9 @@ const Blog = () => {
       </div>
       
     </div>
-    
+    {/* Footer */}
+    <Footer className="w-full mt-auto" />
+    </div>
     
   );
 };
