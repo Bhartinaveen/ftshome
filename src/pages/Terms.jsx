@@ -20,7 +20,7 @@ const Terms = () => {
           boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
           padding: '30px',
           width: '100%',
-          maxWidth: '1000px',
+          maxWidth: '2000px',
         }}
       >
         <h1 style={{ fontSize: '24px', textAlign: 'center', marginBottom: '20px' }}>
@@ -82,20 +82,20 @@ const Terms = () => {
           <p>
             First Home Stay promises a comfortable room stay experience at all First Home Stay-branded properties, which include the following amenities:
           </p>
-          <ul>
-            <li>1.Air-conditioned rooms with television</li>
-            <li>2.Free Wi-Fi</li>
-            <li>3.Spotless linen</li>
-            <li>4.Hygienic and sanitized washrooms</li>
-            <li>5.Housekeeping services on a daily basis for your comfort</li>
-            <li>6.front desk 24/7 assistance to help with any queries</li>
+          <ul style={{ textAlign: 'left' }} className="list-disc list-inside ml-4">
+            <li> Air-conditioned rooms with television</li>
+            <li> Free Wi-Fi</li>
+            <li> Spotless linen</li>
+            <li> Hygienic and sanitized washrooms</li>
+            <li> Housekeeping services on a daily basis for your comfort</li>
+            <li> front desk 24/7 assistance to help with any queries</li>
           </ul>
           <p>
             You can reach out to us by:
           </p>
-          <ul style={{ listStyle: 'none', padding: 0 }}>
-            <li>1.Writing to us on the First Home Stay support page</li>
-            <li>2.Calling us on our 24/7 guest support helpline</li>
+          <ul style={{ textAlign: 'left' }} className="list-disc list-inside ml-4">
+            <li> Writing to us on the First Home Stay support page</li>
+            <li> Calling us on our 24/7 guest support helpline</li>
           </ul>
           <p>
             Our guest support team will ensure the best experience and resolve your concerns. First Home Stay remains involved with guests from the time the booking is made through our platform until the end of their stay, ensuring that guests have a comfortable and memorable stay experience.
@@ -148,11 +148,11 @@ const Terms = () => {
             the implied warranties of title, non-infringement, merchantability, or fitness for a
             particular purpose. Without limiting the foregoing, FirstHomeStay makes no warranty that:
           </p>
-          <ul>
-            <li>(i) The Platform or the Services will meet your requirements or that your use of the Platform will be uninterrupted, timely, secure, or error-free;</li>
-            <li>(ii) The results obtained from using the Platform or Services will be effective, accurate, or reliable;</li>
-            <li>(iii) The quality of the Platform or Services will meet your expectations; or</li>
-            <li>(iv) Any errors or defects in the Platform or Services will be corrected.</li>
+          <ul style={{ textAlign: 'left' }} className="list-disc list-inside ml-4">
+            <li> The Platform or the Services will meet your requirements or that your use of the Platform will be uninterrupted, timely, secure, or error-free;</li>
+            <li> The results obtained from using the Platform or Services will be effective, accurate, or reliable;</li>
+            <li> The quality of the Platform or Services will meet your expectations; or</li>
+            <li> Any errors or defects in the Platform or Services will be corrected.</li>
           </ul>
           <p>
             No advice or information, whether oral or written, obtained by you from FirstHomeStay or

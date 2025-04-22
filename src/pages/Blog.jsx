@@ -5,23 +5,24 @@ const BlogPost = ({ title, date, category, excerpt, fullText, image }) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
+    
     <div className="bg-white shadow-md rounded-lg overflow-hidden w-full max-w-sm">
       <div className="relative h-48 w-full">
         <img src={image} alt="Blog post" className="object-cover w-full h-full" />
       </div>
       <div className="p-6">
-        <div className="flex items-center text-blue-900 text-sm mb-2">
+        <div className="flex items-center text-red-400 text-sm mb-2">
           <span className="mr-1">•</span>
           <span>{date}</span>
           <span>{category}</span>
         </div>
-        <h2 className="text-xl font-bold text-gray-800 mb-3">{title}</h2>
-        <p className="text-gray-600 text-sm mb-4">
+        <h2 className="text-xl  font-bold text-gray-400 mb-3">{title}</h2>
+        <p className="text-blue-900 text-sm mb-4">
           {isExpanded ? fullText : excerpt}
         </p>
         <button
           onClick={() => setIsExpanded(!isExpanded)}
-          className="text-lightblue-500 font-medium text-sm hover:underline focus:outline-none"
+          className="text-lightblue-500 text-blue-400 font-medium text-sm hover:underline focus:outline-none"
         >
           {isExpanded ? 'Show Less' : 'Read More'}
         </button>
@@ -33,11 +34,32 @@ const BlogPost = ({ title, date, category, excerpt, fullText, image }) => {
 const Blog = () => {
   return (
     <div>
+    <div
+    style={{
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      padding: '20px',
+      minHeight: '100vh',
+      backgroundColor: '#f4f6f9',
+    }}>
+     
+    <div
+    style={{
+      backgroundColor: 'white',
+      borderRadius: '8px',
+      boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+      padding: '30px',
+      width: '100%',
+      maxWidth: '2000px',
+    }}
+    >
+      
       <div className="min-h-screen flex items-start justify-center bg-white px-4 pt-4">
         <div className="w-full max-w-7xl text-center">
           <div className="mb-12">
-            <h1 className="text-4xl font-bold">
-              <span className="text-black">MY</span> <span className="text-orange-800">BLOG</span>
+            <h1 className="text-4xl font-bold -translate-y-7">
+              <span className="text-black">MY</span> <span className="text-orange-700">BLOG</span>
             </h1>
           </div>
 
@@ -67,9 +89,13 @@ const Blog = () => {
         </div>
       </div>
 
-      {/* Footer */}
-      <Footer className="w-full mt-auto" />
+      
     </div>
+    </div>
+    {/* Footer */}
+    <Footer className="w-full mt-auto" />
+    </div>
+    
   );
 };
 

@@ -45,7 +45,7 @@ const Navbar = () => {
             <p>👤Personal Account</p>
             <Link to="/contectus" onClick={() => setMenuOpen(false)}>☎️Contact us</Link>
             {/* Removed Sign In/Sign Up Option */}
-            <Link to="/register" onClick={() => setMenuOpen(false)}>📝Register</Link>
+            <Link to="/sign" onClick={() => setMenuOpen(false)}>📝Sign In</Link>
             <p onClick={() => window.open("https://wa.me/919040170727", "_blank")}>💬Chat</p>
             <p className="logout" style={{ color: "red" }}>🔓Logout</p>
           </div>
