@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-
+import Footer from "../Components/Footer";
 const Support = () => {
   const [bookingId, setBookingId] = useState("")
   const [error, setError] = useState("")
@@ -18,8 +18,30 @@ const Support = () => {
   }
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-50">
-      <div className="w-full max-w-2xl p-8 bg-white shadow-md rounded-lg" style={{ height: '300px' }}>
+    <div>
+        <div
+        style={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          padding: '20px',
+          minHeight: '100vh',
+          backgroundColor: '#f4f6f9',
+        }}
+        >
+        <div
+         style={{
+          backgroundColor: 'white',
+          borderRadius: '8px',
+          boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+          padding: '30px',
+          width: '100%',
+          maxWidth: '1000px',
+        }}
+        
+        >
+    <div className="flex items-center justify-center  -translate-y-5 min-h-[400px] ">
+      <div className="w-full max-w-2xl p-8  rounded-lg" style={{ height: '350px' }}>
         <div className="flex flex-col items-center mb-6">
           <img
             src="/images/companylogo.jpg"
@@ -41,10 +63,10 @@ const Support = () => {
             <input
               id="booking-id"
               type="text"
-              placeholder="What is your booking ID?"
+              placeholder=" What is your booking ID?"
               value={bookingId}
               onChange={(e) => setBookingId(e.target.value)}
-              className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full h-[45px] mt-1 px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring focus:ring-indigo-200"
             />
             {error && <p className="mt-1 text-sm text-red-500">{error}</p>}
           </div>
@@ -53,7 +75,7 @@ const Support = () => {
         <div className="mt-6 flex justify-center transform translate-y-6">
           <button
             onClick={handleProceed}
-            className="w-40 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded font-medium"
+            className=" w-[400px] h-[45px] bg-black text-white py-3 rounded-md hover:bg-gray-800 transition-colors"
           >
             Proceed
           </button>
@@ -66,6 +88,11 @@ const Support = () => {
           </a>
         </p>
       </div>
+    </div>
+    </div>
+    </div>
+    {/* Footer */}
+    <Footer className="w-full mt-auto" />
     </div>
   )
 }

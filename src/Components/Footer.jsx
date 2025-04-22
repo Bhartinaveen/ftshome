@@ -74,19 +74,19 @@ const Footer = () => {
         </div>
 
         <div className="text-2xl flex gap-4">
-          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400">
+          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400 text-red-400">
             <FaInstagram />
           </a>
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400">
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400 text-blue-400">
             <FaTwitter />
           </a>
-          <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400">
+          <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400 text-blue-600">
             <FaLinkedin />
           </a>
-          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400">
+          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400 text-blue-900">
             <FaFacebook />
           </a>
-          <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400">
+          <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400 text-red-600">
             <FaYoutube />
           </a>
         </div>

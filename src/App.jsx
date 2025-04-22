@@ -17,6 +17,7 @@ import Cancel from "./pages/Cancel";
 import "./styles/App.css"; 
 import Blog from "./pages/Blog";
 import Support from "./pages/Support";
+import Sign from "./pages/sign";
 
 function App() {
   return (
@@ -44,7 +45,8 @@ function App() {
         <Route path="/cancel" element={<Cancel />} /> {/* Fixed About Page Route */}
         <Route path="/blogs" element={<Blog />} /> {/* Fixed About Page Route */}
         <Route path="/support" element={<Support />} /> {/* Fixed About Page Route */}
-      
+        <Route path="/support" element={<Support />} /> {/* Fixed About Page Route */}
+        <Route path="/sign" element={<Sign />} /> {/* Fixed About Page Route */}
         
       </Routes>
     </Router>
