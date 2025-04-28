@@ -64,14 +64,16 @@ const Navbar = () => {
           <div className="dropdown-menu z-50">
             <Link to="/" onClick={() => setMenuOpen(false)}>🏠Home</Link>
             <Link to="/aboutus" onClick={() => setMenuOpen(false)}>ℹ️About Us</Link>
-            <p>📘My Booking</p>
-            <p>📌Your Location</p>
-            <p>👤Personal Account</p>
-            <Link to="/contectus" onClick={() => setMenuOpen(false)}>☎️Contact us</Link>
-            <p onClick={() => setShowSignIn(true)}>🔐Sign In/Sign Up</p>
+            <Link to="/mybooking" onClick={() => setMenuOpen(false)}>📘My Booking</Link>
+            <Link to="/location" onClick={() => setMenuOpen(false)}>📌Your Location</Link>
+            <Link to="/personal-account" onClick={() => setMenuOpen(false)}>👤Personal Account</Link>
+            <Link to="/contactus" onClick={() => setMenuOpen(false)}>☎️Contact us</Link>
+            <Link to="/partner" onClick={() => setMenuOpen(false)}>🤝Partner</Link>
+           
+             <p onClick={() => setShowSignIn(true)}>🔐Sign In</p>
             <Link to="/register" onClick={() => setMenuOpen(false)}>📝Register</Link>
             <p onClick={() => window.open("https://wa.me/919040170727", "_blank")}>💬Chat</p>
-            <p className="logout" style={{ color: "red" }}>🔓Logout</p>
+            {/* <p className="logout" style={{ color: "red" }}>🔓Logout</p> */}
           </div>
         )}
       </div>
@@ -80,7 +82,7 @@ const Navbar = () => {
         <div className="modal-overlay z-50">
           <div className="modal-content">
             <div className="modal-header">
-              <h2>Sign In/Sign Up</h2>
+              <h2>Sign In</h2>
               <button className="close-btn" onClick={() => setShowSignIn(false)}>✖</button>
             </div>
             <form onSubmit={handleSignInSubmit}>

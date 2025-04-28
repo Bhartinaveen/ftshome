@@ -34,15 +34,14 @@ const Footer = () => {
 
         <div className="footer-links">
           <div className="footer-column">
-            <h4>HomeStay</h4>
+            <h4>Hotels near me</h4>
             <ul>
-              <li>Hotels near me</li>
-              <li>Hotels in Manali</li>
-              <li>Hotels in Nainital</li>
-              <li>Hotels in Agra</li>
-              <li>Hotels in Haridwar</li>
-              <li>Hotels in Gurgaon</li>
-              <li>Hotels in Coimbatore</li>
+              <li><Link to="/manali">Hotels in Manali</Link></li>
+              <li><Link to="/naintal">Hotels in Nainital</Link></li>
+              <li><Link to="/agra">Hotels in Agra</Link></li>
+              <li><Link to="/haridwar">Hotels in Haridwar</Link></li>
+              <li><Link to="/goa">Hotels in Goa</Link></li>
+              <li><Link to="/mysore">Hotels in Mysore</Link></li>
             </ul>
           </div>
 
@@ -51,10 +50,8 @@ const Footer = () => {
             <ul>
               <li><Link to="/aboutus">About Us</Link></li>
               <li><Link to="/blogs">Blogs</Link></li>
-              <li><Link to="/support">Support</Link></li> {/* Updated to Link */}
-              <li>Investor Relations</li>
-              <li>FirsthomeStay Circle</li>
-              <li>FirsthomeStay Frames</li>
+              <li><Link to="/support">Support</Link></li> 
+            
             </ul>
           </div>
 
@@ -63,12 +60,12 @@ const Footer = () => {
             <ul>
               <li><Link to="/terms">Terms and Conditions</Link></li>
               <li><Link to="/cancel">Refund And Cancellation Policy</Link></li>
-              <li>Guest Policies</li>
-              <li>Privacy Policy</li>
-              <li>Trust and Safety</li>
-              <li>Cyber Security</li>
-              <li>Cyber Security Awareness</li>
-              <li>Responsible Disclosure</li>
+              <li><Link to="/guest-policy">Guest Policy</Link></li>
+              <li><Link to="/policy">Privacy Policy</Link></li>
+              <li><Link to="/safety">Trust and Safety</Link></li>
+              <li><Link to="/security">Cyber Security</Link></li>
+              <li><Link to="/security-awareness">Cyber Security Awareness</Link></li>
+              <li><Link to="/disclosure">Responsible Disclosure</Link></li>
             </ul>
           </div>
         </div>
