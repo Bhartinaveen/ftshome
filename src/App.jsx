@@ -18,6 +18,7 @@ import "./styles/App.css";
 import Blog from "./pages/Blog";
 import Support from "./pages/Support";
 import Sign from "./pages/sign";
+import Profile from"./pages/Profile";
 
 function App() {
   return (
@@ -27,10 +28,14 @@ function App() {
         <Route path="/" element={
           <>
             <HeroSection />
+            
             <div className="app-container">
-              {/* <BookingForm /> */}
+             
               <Categories />
+              
               <SpecialOffers />
+              {/* <BookingForm /> */}
+              {/* <Services /> */}
             </div>
             <Footer />
           </>
@@ -47,6 +52,7 @@ function App() {
         <Route path="/support" element={<Support />} /> {/* Fixed About Page Route */}
         <Route path="/support" element={<Support />} /> {/* Fixed About Page Route */}
         <Route path="/sign" element={<Sign />} /> {/* Fixed About Page Route */}
+        <Route path="/profile" element={<Profile />} /> {/* Fixed About Page Route */}
         
       </Routes>
     </Router>

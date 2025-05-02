@@ -42,7 +42,8 @@ const Navbar = () => {
             <Link to="/aboutus" onClick={() => setMenuOpen(false)}>ℹ️About Us</Link>
             <p>📘My Booking</p>
             <p>📌Your Location</p>
-            <p>👤Personal Account</p>
+            {/* <p>👤Personal Account</p> */}
+            <Link to="/profile" onClick={() => setMenuOpen(false)}>👤Personal Account</Link>
             <Link to="/contectus" onClick={() => setMenuOpen(false)}>☎️Contact us</Link>
             {/* Removed Sign In/Sign Up Option */}
             <Link to="/sign" onClick={() => setMenuOpen(false)}>📝Sign In</Link>

@@ -1,111 +1,90 @@
 /* Booking Section Container */
 .booking-container {
   text-align: center;
-  background: linear-gradient(135deg, #c7d2e7, #2a5298); /* Dark blue gradient */
-  padding: 15px; /* Reduce padding */
-  /* border-radius: 10px; Removed border radius */
+  background: linear-gradient(135deg, #c7d2e7, #2a5298);
+  padding: 15px;
   box-shadow: 0 6px 15px rgba(30, 60, 114, 0.5);
-  max-width: 1800px; /* Maintain width */
-  margin: 20px; /* Reduce top and bottom margin */
+  max-width: 100%;
+  margin: 20px auto;
+  border-radius: 10px;
 }
 
 /* Booking Title */
 .booking-container h2 {
   color: white;
-  font-size: 20px; /* Slightly reduce font size */
-  margin-bottom: 10px; /* Reduce space below the title */
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 
-/* Form in One Row */
+/* Booking Form */
 .booking-form {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 8px; /* Reduce spacing between elements */
   flex-wrap: wrap;
-  padding: 5px; /* Reduce padding */
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+/* Input Group (Optional wrapper if needed) */
+.input-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
 }
 
 /* Input Fields */
 .input-field {
-  padding: 8px; /* Reduce padding */
-  font-size: 13px; /* Slightly smaller font */
-  border: 2px solid transparent;
-  border-radius: 6px;
-  outline: none;
-  transition: all 0.3s ease-in-out;
-  flex: 1;
-  min-width: 120px; /* Prevents items from shrinking too much */
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  flex: 1 1 150px;
+  min-width: 120px;
+  max-width: 250px;
+  box-sizing: border-box;
 }
 
 /* Booking Button */
 .booking-btn {
-  background: linear-gradient(90deg, #4a90e2, #5eb3f6); /* Brighter blue */
+  background: linear-gradient(90deg, #4a90e2, #5eb3f6);
   color: white;
-  font-size: 14px; /* Reduce font size */
+  font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
-  padding: 8px 16px; /* Reduce padding */
-  border: 2px solid transparent;
+  padding: 8px 16px;
+  border: none;
   border-radius: 6px;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  box-shadow: 0 3px 8px rgba(74, 144, 226, 0.3); /* Reduce shadow */
-}
-
-/* CSS in BookingForm.css */
-.booking-form {
-  display: flex;
-  justify-content: center;
-}
-
-.input-group {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  width: 100%;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-}
-
-.input-field {
-  width: 10px; /* Reduced length */
-  padding: 6px;
-  font-size: 14px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.booking-btn {
-  background-color: #007bff;
-  color: white;
-  padding: 6px 10px;
-  font-size: 14px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
   white-space: nowrap;
+  box-shadow: 0 3px 8px rgba(74, 144, 226, 0.3);
+  transition: background-color 0.3s ease-in-out;
 }
 
 .booking-btn:hover {
   background-color: #0056b3;
 }
 
-@media (max-width: 900px) {
-  .booking-container {
-      max-width: 100%;
+/* Responsive Design */
+@media (max-width: 768px) {
+  .booking-form {
+    flex-direction: column;
+    align-items: center;
   }
 
   .input-group {
-      flex-wrap: wrap;
-      justify-content: center;
+    flex-direction: column;
+    align-items: stretch;
   }
 
   .input-field {
-      width: 10px; /* Further reduced length for smaller screens */
+    width: 100%;
+    max-width: 100%;
   }
 
   .booking-btn {
-      min-width: 100px;
+    width: 100%;
+    max-width: 300px;
   }
 }
